@@ -3,9 +3,9 @@
         <div class="title-form">
             <h1>Login</h1>
         </div>
-        <form class="registration-form">
+        <form class="registration-form mt-5">
             <div class="form-group mb-3">
-                <label for="email">Email Address</label>
+                <label class="input-label" for="email">Email Address</label>
                 <input
                     placeholder="someone@email.com"
                     type="email"
@@ -14,14 +14,19 @@
                 />
             </div>
             <div class="form-group mb-3">
-                <label for="password">Password</label>
+                <label class="input-label" for="password">Password</label>
                 <input
                     placeholder="Password"
                     type="password"
                     class="form-control"
                 />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="d-flex justify-content-around">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <router-link to="/register">
+                    <a href="#">Not a user? Click Here</a>
+                </router-link>
+            </div>
         </form>
     </div>
 </template>

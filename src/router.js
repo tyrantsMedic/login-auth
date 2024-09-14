@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MainLogin from "./layouts/MainLogin.vue";
+import Main from "./layouts/Main.vue";
 import Registration from "./components/Registration.vue";
 import Login from "./components/Login.vue";
 const router = createRouter({
@@ -8,7 +8,7 @@ const router = createRouter({
         {
             name: "Main",
             path: "/",
-            component: MainLogin,
+            component: Main,
             redirect: "/login",
             meta: {
                 title: "Home",
@@ -28,6 +28,14 @@ const router = createRouter({
                     component: Login,
                     meta: {
                         title: "Login",
+                    },  
+                },
+                {
+                    name: "Dashboard",
+                    path: "/dashboard",
+                    component: Login,
+                    meta: {
+                        title: "Dashboard",
                     },  
                 }
             ]
